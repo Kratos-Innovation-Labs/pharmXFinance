@@ -32,7 +32,7 @@ contract pharmX is ERC20 {
         string[] memory hash = new string[](prooflength[orderId]);
 
         for(uint256 i=0;i<prooflength[orderId];i++)
-        hash[i]=(string(abi.encodePacked("ipfs.io/ipfs/", proof[orderId][i])));
+        hash[i]=(string(abi.encodePacked("https://ipfs.io/ipfs/", proof[orderId][i])));
          return hash;
     }
 }
